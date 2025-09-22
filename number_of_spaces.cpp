@@ -21,6 +21,22 @@ void checkCharacterState(char c){
 		cout << c << " is neither a character or a number"<<endl;
 	}
 }
+
+int countWords(const string& str){
+    int count=0;
+    bool inWord = false;
+    for(char c:str){
+        if(isspace(c)){
+            inWord = false;
+        }else{
+            if(!inWord){
+                count++;
+                inWord = true;
+            }
+        }
+    }
+    return count;
+}
 int main(){
     string input;
     char ch;
@@ -35,6 +51,14 @@ int main(){
     cout<< "Enter character you want to test"<<endl;
     cin >> ch;
     checkCharacterState(ch);
+    cout<<"\nWORD COUNTER"<<endl;
+    cout<<"============"<<endl;
+    cout<<"Enter a string: ";
+    cin.ignore(); // To ignore the newline character left in the buffer
+    getline(cin,input);
+    int wordCount = countWords(input);
+    cout<<"Number of words: "<<wordCount<<endl;
+    
     
     return 0;
 }
