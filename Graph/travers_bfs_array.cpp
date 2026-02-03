@@ -1,5 +1,9 @@
 #include <bits/stdc++.h>
 
+//Twarimitswe Aaron
+//Kamana Clare
+//Igihozo Belise
+
 using namespace std;
 
 int graph[7][7];
