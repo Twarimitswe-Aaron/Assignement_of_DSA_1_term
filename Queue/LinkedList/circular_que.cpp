@@ -36,11 +36,11 @@ public:
 
         if (isEmpty()) {
             front = rear = newNode;
-            rear->next = front;   // circular link
+            rear->next = front;   
         } else {
             rear->next = newNode;
             rear = newNode;
-            rear->next = front;   // maintain circle
+            rear->next = front;   
         }
 
         cout << "Enqueued: " << val << endl;
