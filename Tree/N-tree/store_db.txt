@@ -1,0 +1,6 @@
+0,MyStore,Store
+1,Electronics,Category
+2,TV,Model
+3,Sony Bravia,Brand
+2,Phone,Model
+3,iPhone 15 Pro,Brand
